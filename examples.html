@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>WELCOME TO VICTORY'S PLATFORM</title>
+    <title>User Information Form</title>
+</head>
+<body>
+    <div class="container mt-2">
+        <h2>Welcome to Victory platform</h2><br>
+        <h2>User Information Form</h2>
+        <form action="process.php" method="post">
+            <div class="form-group">
+                <label for="firstname">ID Number:</label><br>
+                <input type="text" class="form-control" id="ID " name="firstname" required><br>
+            </div>
+            <div class="form-group">
+                <label for="firstname">First Name:</label><br>
+                <input type="text" class="form-control" id="firstname" name="firstname" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" class="form-control" id="lastname" name="lastname" required><br> <!-- Fixed the typo here -->
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label><br>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="male" name="gender" value="Male" required><br>
+                    <label class="form-check-label" for="male">Male</label><br>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="female" name="gender" value="Female" required><br>
+                    <label class="form-check-label" for="female">Female</label><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label><br>
+                <input type="number" class="form-control" id="age" name="age" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location:</label><br>
+                <input type="text" class="form-control" id="location" name="location" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="position">Position:</label><br>
+                <input type="text" class="form-control" id="position" name="position" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount of Price:</label><br>
+                <input type="number" class="form-control" id="amount" name="amount" step="0.01" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="signature">Signature:</label><br>
+                <textarea class="form-control" id="signature" name="signature" rows="3" required></textarea><br>
+            </div>
+                   <div class="form-group">
+                <label for="signature">Confirm it before submit:</label><br>
+                <textarea class="form-control" id="Confirm" name="Confirm" rows="3" required></textarea><br>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
